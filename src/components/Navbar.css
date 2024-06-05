@@ -1,0 +1,52 @@
+.navbar {
+  position: fixed !important; /* Fija la posición del Navbar */
+  width: 100%; /* Asegúrate de que ocupe todo el ancho */
+  background-color: white; /* Asegúrate de que tenga un fondo para que el contenido no se vea detrás */
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  box-shadow: 0 4px 2px -2px gray; /* Opcional: añade una sombra para que se destaque */
+  transition: background-color 0.5s ease;
+}
+
+/* Asegúrate de que el contenido no quede oculto detrás del Navbar */
+body {
+  margin-top: 50px; /* Ajusta este valor según la altura de tu Navbar */
+}
+
+/* Ajusta los anclajes de los enlaces del Navbar */
+:target::before {
+  content: "";
+  display: block;
+  height: 0px; /* Ajusta este valor según la altura de tu Navbar */
+  margin-top: -0px; /* Debe ser el mismo valor que el anterior */
+}
+
+.navbar-colored{
+  background-color: blue; /* Cambia esto al color que prefieras */
+}
+
+.navbar-transparent{
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navbar-brand{
+  color: wheat !important;
+}
+
+.navbar-toggler{
+  border-color: wheat !important;
+}
+
+.nav-item a {
+  color: wheat !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(245, 222, 179, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+@media (min-width: 998px) {
+  .navbar {
+    background-color: rgb(4, 4, 143);
+  }
+}

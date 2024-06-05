@@ -1,0 +1,29 @@
+.profile-container{
+    height: 100vh;
+    padding-top: 8vh;
+    background-color: wheat;
+}
+
+.profile-sub-container{
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: blue;
+    margin-top: 2vh;
+}
+/* 
+.list-group{
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.list-group-item{
+    height: 350px;
+} */
+
+.mycarouselProfile{
+    padding: 0 24px;
+}

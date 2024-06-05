@@ -1,0 +1,149 @@
+.home-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 56px;
+  background-image: url("../assets/background1.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.custom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  position: relative;
+}
+
+.relative {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 640px;
+  max-height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.focus-container {
+  width: fit-content;
+  height: auto;
+  cursor: grab;
+  position: absolute;
+  left: 15px;
+  top: 30px;
+}
+
+.focus-container:active {
+  cursor: grabbing;
+}
+
+@keyframes swing {
+   0%, 100% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  6%,  8%,  10%,  12%, 14%, 16%, 18%, 20%{
+    transform: rotate(-15deg) translateX(1px) translateY(1px);
+  }
+  7%,  9%,  11%,  13%, 15%, 17%, 19%, 21%{
+    transform: rotate(-15deg) translateX(-1px) translateY(-1px);
+  }
+}
+
+
+.welcome {
+  background-color: wheat;
+  position: absolute;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+  width: auto;
+  animation: swing 10s infinite;
+  font-size: clamp(6vw, 4.5vw, 100px);
+  white-space: nowrap;
+}
+
+.rounded-img {
+  width: 100%;
+  height: fit-content;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+}
+
+.title {
+  margin-bottom: 30px;
+  background-color: wheat;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra negra */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+  font-family: "Nunito", sans-serif;
+  cursor: grab;
+}
+
+.title:active {
+  cursor: grabbing;
+}
+
+.role {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: wheat;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+}
+
+.btn-primary {
+  background-color: orange !important;
+  border-color: orange !important;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+}
+
+.btn-secondary {
+  background-color: purple !important;
+  border-color: purple !important;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+}
+
+.home-buttons {
+  margin-top: 70px;
+}
+
+.home-buttons button {
+  width: 150px;
+  height: auto;
+  font-size: 1.5rem;
+}
+
+.arrow{
+  margin-left: 300px;
+  margin-top: 80px;
+  width: fit-content;
+  height: auto;
+}
+
+@media (min-width: 998px) {
+  .custom {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .welcome-text-desktop {
+    width: 400px;
+    height: 400px;
+    background-color: wheat;
+  }
+
+  .rounded-img {
+    width: 500px;
+    height: 500px;
+  }
+}
