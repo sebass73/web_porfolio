@@ -7,23 +7,79 @@
 .profile-sub-container{
     height: 90%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: blue;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    /* background-color: blue; */
+    background-image: linear-gradient(to bottom, blue, wheat);
     margin-top: 2vh;
 }
-/* 
-.list-group{
-    width: 300px;
-    height: 400px;
-    justify-content: center;
-    margin-top: 30px;
+ 
+.profileCarousel{
+    width: 90%;
+    max-width: 593px;
+    height: fit-content;
 }
 
-.list-group-item{
-    height: 350px;
-} */
+.carousel-inner-profile{
+    width: 90% !important;
+    height: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 2rem;
+}
 
-.mycarouselProfile{
-    padding: 0 24px;
+.carousel-control-prev-profile{
+    opacity: 1 !important;
+    width: 48px !important;
+    background-color: wheat !important;
+    height: 48px !important;
+    border-radius: 50%;
+    align-self: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+    -webkit-box-shadow: 0 1.2px 1.92251px rgba(0,0,0,.02),0 2px 3.68135px rgba(0,0,0,.04),0 1px 5px rgba(0,0,0,.05);
+}
+  
+.carousel-control-prev-icon-profile{
+    background-color: wheat;
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+}
+
+.carousel-control-next-profile{
+    opacity: 1 !important;
+    width: 48px !important;
+    background-color: wheat !important;
+    height: 48px !important;
+    border-radius: 50%;
+    align-self: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+    -webkit-box-shadow: 0 1.2px 1.92251px rgba(0,0,0,.02),0 2px 3.68135px rgba(0,0,0,.04),0 1px 5px rgba(0,0,0,.05);
+}
+
+.carousel-control-next-icon-profile{
+    background-color: wheat;
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z' transform='rotate(180 8 8)'/%3e%3c/svg%3e") !important;
+}
+
+.carousel-profile-img{
+    height: 20rem;
+    object-fit: contain;
+}
+
+.profile-title{
+    padding-top: 1rem;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    /* color: black; */
+}
+
+.profile-paragraph{
+    width: 90%;
 }
