@@ -53,9 +53,9 @@ const About = () => {
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div className="carousel-inner">
+            <div className="carousel-inner carousel-inner-home">
               <div className="carousel-item active">
-                <img src={yoga} className="d-block w-100" alt={avatar} />
+                <img src={yoga} className="d-block w-100 carousel-img" alt={avatar} />
               </div>
               <div className="carousel-item">
                 <img src={slackPhoto} className="d-block w-100" alt={avatar} />
@@ -65,25 +65,25 @@ const About = () => {
               </div>
             </div>
             <button
-              className="carousel-control-prev"
+              className="carousel-control-prev carousel-control-prev-home"
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="prev"
             >
               <span
-                className="carousel-control-prev-icon"
+                className="carousel-control-prev-icon carousel-control-prev-icon-home"
                 aria-hidden="true"
               ></span>
               <span className="visually-hidden">Previous</span>
             </button>
             <button
-              className="carousel-control-next"
+              className="carousel-control-next carousel-control-next-home"
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="next"
             >
               <span
-                className="carousel-control-next-icon"
+                className="carousel-control-next-icon carousel-control-next-icon-home"
                 aria-hidden="true"
               ></span>
               <span className="visually-hidden">Next</span>
@@ -91,15 +91,16 @@ const About = () => {
           </div>
           <div className="about-description">
             <p>
-              "Soy alguien apasionado por descubrir nuevas formas de hacer las
+{/*               "Soy alguien apasionado por descubrir nuevas formas de hacer las
               cosas, siempre en movimiento y listo para actuar. Mi principal
               compromiso es con el crecimiento personal y el bienestar de los
               demás. Creo firmemente que la comunicación honesta y las
               conexiones auténticas son la base de relaciones sólidas y
               duraderas. A través de mi experiencia como profesor de Yoga y
               Acroyoga, he aprendido que el liderazgo se nutre del respeto mutuo
-              y la colaboración.
+              y la colaboración. */}
               {/* I'm a passionate explorer of human potential, constantly seeking new avenues for growth and development. My commitment to innovation and action is coupled with a profound belief in the importance of collective well-being. I consider myself a natural communicator, building strong relationships based on trust and genuine enthusiasm. In my experience as a yoga and acroyoga instructor, I've learned that leadership thrives on mutual respect and collaboration. */}
+              "Soy un apasionado de la innovación y el bienestar colectivo, creyendo firmemente en la honestidad y las conexiones auténticas como fundamentos de relaciones sólidas. Mi experiencia como profesor de Yoga y Acroyoga respalda un liderazgo colaborativo y respetuoso."
             </p>
           </div>
           <div className="about-buttons">
