@@ -1,19 +1,18 @@
-import './Skills.css'
+import "./Skills.css";
+import nodejsicon from "../assets/icons/nodejsicon.svg";
+import reactjsicon from "../assets/icons/reactjsicon.svg";
+import reduxicon from "../assets/icons/redux.svg";
+import scss from "../assets/icons/scss.svg";
 
 const Skills = () => {
   return (
-    <div className='skills-container'>
-        {/* <h1 className="skills-title">Tech Stack</h1> */}
-        <div className="skills-title">Tech Stack</div>
-        <ul className='list'>
-            <li>Node JS</li>
-            <li>React JS</li>
-            <li>Redux</li>
-            <li>Typescript</li>
-            {/* <li>HTML + Css</li> */}
-        </ul>
+    <div className="skills-container">
+      <img src={nodejsicon} alt="" className="icon" />
+      <img src={reactjsicon} alt="" className="icon" />
+      <img src={reduxicon} alt="" className="icon" />
+      <img src={scss} alt="" className="icon" />
     </div>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
