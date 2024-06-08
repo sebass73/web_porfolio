@@ -4,6 +4,7 @@ import english from "../assets/englishTrinity.jpg";
 import react from "../assets/reactEducacionIT.jpeg";
 import avatar from "../assets/avatar.avif";
 import Skills from "../components/Skills";
+import ResumeButton from "../components/ResumeButton";
 
 const Profile = () => {
   return (
@@ -65,9 +66,11 @@ const Profile = () => {
         </div>
         <h1 className="profile-title">My Profile</h1>
         <p className="profile-paragraph">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, vero expedita. Voluptatum eos, libero tenetur repellendus numquam vitae. Impedit dicta illo magni, ea maiores perspiciatis voluptatem repellendus enim exercitationem ad.
+        {/* Desarrollador Fullstack con 5 años de experiencia, dominio de un amplio stack de tecnologías y formación universitaria. Especializado en tecnologías e idiomas, destaco en soluciones innovadoras y de alta calidad, aportando valor y eficiencia en cada proyecto. */}
+        Fullstack Developer with 5 years of experience, proficient in a wide range of technologies and holding a university degree. Specialized in technologies and languages, I excel in creating innovative, high-quality solutions, bringing value and efficiency to every project.
         </p>
-        <button className="btn btn-secondary">My Resume</button>
+        {/* <button className="btn btn-secondary">My Resume</button> */}
+        <ResumeButton/>
       </div>
     </div>
   );

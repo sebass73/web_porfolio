@@ -7,10 +7,22 @@ import scss from "../assets/icons/scss.svg";
 const Skills = () => {
   return (
     <div className="skills-container">
-      <img src={nodejsicon} alt="" className="icon" />
-      <img src={reactjsicon} alt="" className="icon" />
-      <img src={reduxicon} alt="" className="icon" />
-      <img src={scss} alt="" className="icon" />
+      <div className="skills-element">
+        <img src={nodejsicon} alt="" className="icon" />
+        <span className="icon-description">Node.js</span>
+      </div>
+      <div className="skills-element">
+        <img src={reactjsicon} alt="" className="icon" />
+        <span className="icon-description">React.js</span>
+      </div>
+      <div className="skills-element">
+        <img src={reduxicon} alt="" className="icon" />
+        <span className="icon-description">Redux</span>
+      </div>
+      <div className="skills-element">
+        <img src={scss} alt="" className="icon" />
+        <span className="icon-description">Scss</span>
+      </div>
     </div>
   );
 };

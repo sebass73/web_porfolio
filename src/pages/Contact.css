@@ -81,6 +81,7 @@
 }
 
 .contact-title{
-    /* margin: 0 auto;
-    width: 40%; */
+    margin: 1rem;
+    color: black;
+    font-weight: 600;
 }

@@ -20,6 +20,7 @@
     width: 90%;
     max-width: 593px;
     height: auto;
+    padding-top: 1.5rem;
 }
 
 .carousel-inner-home{
@@ -75,20 +76,30 @@
 }
 
 .about-description p{
-    margin: 1rem;
-    padding-left: 8px;
-    padding-right: 8px;
+    /* margin: 1rem; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+/*     padding-left: 8px;
+    padding-right: 8px; */
     font-weight: 500;
     font-size: 1.2rem;
     font-style: italic;
     color: #005c1d;
-    line-height: 1.6rem;
 
     font-family: "Domine", serif;
     font-optical-sizing: auto;
     line-height: 1.8rem;
-    /* font-weight: 200;
-    font-style: normal; */
+}
+
+.about-title{
+    margin: 1rem;
+    align-self: baseline;
+    color: black;
+    font-weight: 600;
+}
+
+.about-buttons{
+    margin-top: 0.5rem;
 }
 
 @media (min-width: 998px) {

@@ -6,6 +6,8 @@ import useWidthScreen from "../hooks/useWidthScreen";
 import "./About.css";
 import Draggable from "react-draggable";
 import { useRef } from "react";
+import ResumeButton from "../components/ResumeButton";
+import LetsTalkButton from "../components/LetsTalkButton";
 
 const About = () => {
   const handleHablemosClick = () => {
@@ -25,7 +27,6 @@ const About = () => {
               <h3 className="welcome">Hola, ¿qué tal? 👋</h3>
             </div>
           </Draggable> */}
-          <h1>About me</h1>
           <div
             id="carouselExampleIndicators"
             className="carousel slide mycarousel"
@@ -89,6 +90,7 @@ const About = () => {
               <span className="visually-hidden">Next</span>
             </button>
           </div>
+          <h1 className="about-title">About me</h1>
           <div className="about-description">
             <p>
 {/*               "Soy alguien apasionado por descubrir nuevas formas de hacer las
@@ -99,13 +101,15 @@ const About = () => {
               duraderas. A través de mi experiencia como profesor de Yoga y
               Acroyoga, he aprendido que el liderazgo se nutre del respeto mutuo
               y la colaboración. */}
-              {/* I'm a passionate explorer of human potential, constantly seeking new avenues for growth and development. My commitment to innovation and action is coupled with a profound belief in the importance of collective well-being. I consider myself a natural communicator, building strong relationships based on trust and genuine enthusiasm. In my experience as a yoga and acroyoga instructor, I've learned that leadership thrives on mutual respect and collaboration. */}
-              "Soy un apasionado de la innovación y el bienestar colectivo, creyendo firmemente en la honestidad y las conexiones auténticas como fundamentos de relaciones sólidas. Mi experiencia como profesor de Yoga y Acroyoga respalda un liderazgo colaborativo y respetuoso."
+              "I am passionate about innovation and collective well-being, firmly believing in honesty and authentic connections as the foundations of strong relationships. My experience as a Yoga and Acroyoga instructor supports a collaborative and respectful leadership."
+              {/* "Soy un apasionado de la innovación y el bienestar colectivo, creyendo firmemente en la honestidad y las conexiones auténticas como fundamentos de relaciones sólidas. Mi experiencia como profesor de Yoga y Acroyoga respalda un liderazgo colaborativo y respetuoso." */}
             </p>
           </div>
           <div className="about-buttons">
-            <button className="btn btn-primary me-2">Hablemos!</button>
-            <button className="btn btn-secondary">My CV</button>
+            {/* <button className="btn btn-primary me-2">Let's talk!</button> */}
+            <LetsTalkButton/>
+            {/* <button className="btn btn-primary me-2">Hablemos!</button> */}
+            <ResumeButton/>
           </div>
         </div>
       ) : (
