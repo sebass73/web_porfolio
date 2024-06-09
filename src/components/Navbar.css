@@ -27,11 +27,16 @@ body {
 .navbar-transparent{
   background-color: transparent;
   box-shadow: none;
+  height: 64px;
 }
 
 .navbar-brand{
   color: wheat !important;
+  font-size: 1.6rem !important;
   font-weight: 800;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .navbar-toggler{
@@ -40,6 +45,7 @@ body {
 
 .nav-item a {
   color: wheat !important;
+  font-weight: 600 !important;
 }
 
 .navbar-toggler-icon {
@@ -53,5 +59,25 @@ body {
 @media (min-width: 998px) {
   .navbar {
     background-color: rgb(4, 4, 143);
+  }
+
+  .navbar-colored{
+    background-color: blue; /* Cambia esto al color que prefieras */
+  }
+  
+  .navbar-transparent{
+    background-color: transparent !important;
+    box-shadow: none;
+  }
+
+  .navbar-brand-desktop-blue{
+    color: blue !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra negra */
+    -webkit-text-stroke: 0.3px white; /* Borde blanco */
+    text-stroke: 1px white;
+  }
+
+  .navbar-brand-desktop-white{
+    color: wheat;
   }
 }

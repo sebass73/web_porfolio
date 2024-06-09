@@ -103,10 +103,15 @@
 }
 
 @media (min-width: 998px) {
-     .about-sub-container{
+    .about-container{
+        height: 100vh;
+    }
+
+    .about-sub-container{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        padding-top: 0;
     }
 
     .mycarousel{

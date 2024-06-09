@@ -1,8 +1,11 @@
 {
     "Welcome to React": "Bienvenue à React et react-i18next",
     "Home title": "¡Yo soy Sebastián!",
+    "Home title desktop": "¡Yo soy ",
+    "Home title desktop name": "Sebastián",
     "Home role": "Desarrollador FullStack",
     "Home welcome": "Hola, ¿Qué tal? 👋",
+    "Home role description desktop": "Fusiono mi pasión por diseño, programación e interacción web para crear soluciones digitales innovadoras como desarrollador fullstack.",
     "Lets talk button": "¡Hablemos!",
     "Resume button": "Mi CV",
     "About title": "Sobre mi",

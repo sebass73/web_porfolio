@@ -132,19 +132,69 @@
 }
 
 @media (min-width: 998px) {
+  .home-container {
+    height: 100vh;
+  }
+  
   .custom {
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
   }
 
   .welcome-text-desktop {
-    width: 400px;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 55%;
+    height: 60%;
+    align-items: center;
+    padding: 1rem;
     background-color: wheat;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+    max-width: 41rem;
+    margin: 0 auto;
+  }
+
+  .home-text {
+    display: flex;
+    flex-direction: column;
+    /* width: 60rem; */
   }
 
   .rounded-img {
-    width: 500px;
-    height: 500px;
+    width: 40%;
+    height: 100%;
+  }
+  
+  .title{
+    font-size: 4rem;
+    box-shadow: none;
+    cursor: unset;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+  }
+
+  .role {
+    box-shadow: none;
+    margin-top: 0px;
+  }
+
+  .home-role-description-desktop{
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .welcome-desktop{
+    font-size: x-large;
+    align-self: start;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra negra */
+  }
+
+  .home-buttons {
+    margin-top: 0px;
+  }
+  
+  .home-desktop-name{
+    font-weight: 500;
   }
 }
