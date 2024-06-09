@@ -53,12 +53,12 @@ const Home = () => {
               <h2 className="role">FullStack Developer</h2>
             </div>
             <div className="home-buttons">
-              <button
+{/*               <button
                 className="btn btn-primary me-2"
                 onClick={handleHablemosClick}
               >
                 Hablemos!
-              </button>
+              </button> */}
               <button className="btn btn-secondary">My CV</button>
             </div>
           </div>
