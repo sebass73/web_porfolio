@@ -27,6 +27,8 @@
     display: flex !important;
     max-width: 20rem;
     width: 100%;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .social-media-button-gray{
@@ -55,6 +57,7 @@
 
 .social-media-button-subtitle{
     font-size: x-small;
+    /* overflow: hidden; */
 }
 
 .contact-icon{

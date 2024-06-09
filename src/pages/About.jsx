@@ -8,6 +8,7 @@ import Draggable from "react-draggable";
 import { useRef } from "react";
 import ResumeButton from "../components/ResumeButton";
 import LetsTalkButton from "../components/LetsTalkButton";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   const handleHablemosClick = () => {
@@ -17,6 +18,8 @@ const About = () => {
   const widthScreen = useWidthScreen();
 
   const draggableRef = useRef(null);
+
+  const { t } = useTranslation();
 
   return (
     <div className="about-container">
@@ -90,25 +93,14 @@ const About = () => {
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-          <h1 className="about-title">About me</h1>
+          <h1 className="about-title">{t('About title')}</h1>
           <div className="about-description">
             <p>
-{/*               "Soy alguien apasionado por descubrir nuevas formas de hacer las
-              cosas, siempre en movimiento y listo para actuar. Mi principal
-              compromiso es con el crecimiento personal y el bienestar de los
-              demás. Creo firmemente que la comunicación honesta y las
-              conexiones auténticas son la base de relaciones sólidas y
-              duraderas. A través de mi experiencia como profesor de Yoga y
-              Acroyoga, he aprendido que el liderazgo se nutre del respeto mutuo
-              y la colaboración. */}
-              "I am passionate about innovation and collective well-being, firmly believing in honesty and authentic connections as the foundations of strong relationships. My experience as a Yoga and Acroyoga instructor supports a collaborative and respectful leadership."
-              {/* "Soy un apasionado de la innovación y el bienestar colectivo, creyendo firmemente en la honestidad y las conexiones auténticas como fundamentos de relaciones sólidas. Mi experiencia como profesor de Yoga y Acroyoga respalda un liderazgo colaborativo y respetuoso." */}
+              {t('About description')}
             </p>
           </div>
           <div className="about-buttons">
-            {/* <button className="btn btn-primary me-2">Let's talk!</button> */}
             <LetsTalkButton/>
-            {/* <button className="btn btn-primary me-2">Hablemos!</button> */}
             <ResumeButton/>
           </div>
         </div>

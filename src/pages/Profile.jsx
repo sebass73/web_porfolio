@@ -5,8 +5,11 @@ import react from "../assets/reactEducacionIT.jpeg";
 import avatar from "../assets/avatar.avif";
 import Skills from "../components/Skills";
 import ResumeButton from "../components/ResumeButton";
+import { useTranslation } from "react-i18next";
 
 const Profile = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="profile-container">
       <Skills></Skills>
@@ -64,12 +67,10 @@ const Profile = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <h1 className="profile-title">My Profile</h1>
+        <h1 className="profile-title">{t('Profile title')}</h1>
         <p className="profile-paragraph">
-        {/* Desarrollador Fullstack con 5 años de experiencia, dominio de un amplio stack de tecnologías y formación universitaria. Especializado en tecnologías e idiomas, destaco en soluciones innovadoras y de alta calidad, aportando valor y eficiencia en cada proyecto. */}
-        Fullstack Developer with 5 years of experience, proficient in a wide range of technologies and holding a university degree. Specialized in technologies and languages, I excel in creating innovative, high-quality solutions, bringing value and efficiency to every project.
+          {t('Profile paragraph')}
         </p>
-        {/* <button className="btn btn-secondary">My Resume</button> */}
         <ResumeButton/>
       </div>
     </div>

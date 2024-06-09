@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const ResumeButton = () => {
   const handleResumeClick = () => {
@@ -10,9 +11,11 @@ const ResumeButton = () => {
     document.body.removeChild(link);
   };
 
+  const { t } = useTranslation();
+
   return (
     <button className="btn btn-secondary" onClick={handleResumeClick}>
-      Resume
+      {t('Resume button')}
     </button>
   );
 };

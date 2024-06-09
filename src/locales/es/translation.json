@@ -1,0 +1,21 @@
+{
+    "Welcome to React": "Bienvenue à React et react-i18next",
+    "Home title": "¡Yo soy Sebastián!",
+    "Home role": "Desarrollador FullStack",
+    "Home welcome": "Hola, ¿Qué tal? 👋",
+    "Lets talk button": "¡Hablemos!",
+    "Resume button": "Mi CV",
+    "About title": "Sobre mi",
+    "About description": "\"Soy un apasionado de la innovación y el bienestar colectivo, creyendo firmemente en la honestidad y las conexiones auténticas como fundamentos de relaciones sólidas. Mi experiencia como profesor de Yoga y Acroyoga respalda un liderazgo colaborativo y respetuoso.\"",
+    "Profile title": "Mi Perfil",
+    "Profile paragraph": "Desarrollador Fullstack con 5 años de experiencia, dominio de un amplio stack de tecnologías y formación universitaria. Especializado en tecnologías e idiomas, destaco en soluciones innovadoras y de alta calidad, aportando valor y eficiencia en cada proyecto.",
+    "Contact title": "Contactame",
+    "Email Social media button subtitle": "Envia un correo",
+    "Linkedin Social media button subtitle": "Conectemos",
+    "Github Social media button subtitle": "Muy pronto",
+    "Instagram Social media button subtitle": "Sigueme",
+    "Contact form name":"Nombre",
+    "Contact form email":"Email",
+    "Contact form title message":"¿Qué mas es posible?",
+    "Contact form title placeholder":"Me pongo en contacto..."
+}
