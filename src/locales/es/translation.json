@@ -17,5 +17,9 @@
     "Contact form name":"Nombre",
     "Contact form email":"Email",
     "Contact form title message":"¿Qué mas es posible?",
-    "Contact form title placeholder":"Me pongo en contacto..."
+    "Contact form title placeholder":"Me pongo en contacto...",
+    "Home":"Inicio",
+    "About":"Sobre mi",
+    "Profile":"Mi perfil",
+    "Contact":"Contáctame"
 }
