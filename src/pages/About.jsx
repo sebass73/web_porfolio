@@ -25,7 +25,7 @@ const About = () => {
     <div className="about-container">
       {widthScreen < 998 ? (
         <div className="about-sub-container">
-{/*           <Draggable nodeRef={draggableRef}>
+          {/*           <Draggable nodeRef={draggableRef}>
             <div ref={draggableRef} className="focus-container">
               <h3 className="welcome">Hola, ¿qué tal? 👋</h3>
             </div>
@@ -59,7 +59,11 @@ const About = () => {
             </div>
             <div className="carousel-inner carousel-inner-home">
               <div className="carousel-item active">
-                <img src={yoga} className="d-block w-100 carousel-img" alt={avatar} />
+                <img
+                  src={yoga}
+                  className="d-block w-100 carousel-img"
+                  alt={avatar}
+                />
               </div>
               <div className="carousel-item">
                 <img src={slackPhoto} className="d-block w-100" alt={avatar} />
@@ -93,24 +97,18 @@ const About = () => {
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-          <h1 className="about-title">{t('About title')}</h1>
+          <h1 className="about-title">{t("About title")}</h1>
           <div className="about-description">
-            <p>
-              {t('About description')}
-            </p>
+            <p>{t("About description")}</p>
           </div>
           <div className="about-buttons">
-            <LetsTalkButton/>
-            <ResumeButton/>
+            <LetsTalkButton />
+            <ResumeButton />
           </div>
         </div>
       ) : (
         <div className="about-sub-container">
-          <div
-            id="carouselExampleIndicators"
-            className="carousel slide mycarousel"
-            data-bs-ride="carousel"
-          >
+          <div id="carouselExampleIndicators" className="carousel slide mycarousel" data-bs-ride="carousel">
             <div className="carousel-indicators">
               <button
                 type="button"
@@ -135,13 +133,13 @@ const About = () => {
             </div>
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src={avatar} className="d-block w-100" alt="..." />
+                <img src={yoga} className="d-block w-100" alt={avatar} />
               </div>
               <div className="carousel-item">
-                <img src={avatar} className="d-block w-100" alt="..." />
+                <img src={slackPhoto} className="d-block w-100" alt={avatar} />
               </div>
               <div className="carousel-item">
-                <img src={avatar} className="d-block w-100" alt="..." />
+                <img src={acroyoga} className="d-block w-100" alt={avatar} />
               </div>
             </div>
             <button
@@ -149,6 +147,7 @@ const About = () => {
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="prev"
+              style={{justifyContent: "flex-start !important"}}
             >
               <span
                 className="carousel-control-prev-icon"
@@ -157,10 +156,11 @@ const About = () => {
               <span className="visually-hidden">Previous</span>
             </button>
             <button
-              className="carousel-control-next"
+              className="carousel-control-next carousel-control-next-about"
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="next"
+              style={{justifyContent: "flex-start !important"}}
             >
               <span
                 className="carousel-control-next-icon"
@@ -170,25 +170,11 @@ const About = () => {
             </button>
           </div>
           <div className="about-description">
-            <h1>About me</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              distinctio id ea, enim rerum vitae odit aliquid earum deserunt
-              voluptate reprehenderit fugit ipsum in, adipisci laborum veritatis
-              corrupti, voluptatem atque. Officia ut adipisci vel eos
-              consequatur, harum sed accusamus vero commodi hic sit nemo!
-              Reiciendis quidem, quos quae necessitatibus odio illo iste
-              temporibus tempora consequatur sapiente, ea atque reprehenderit
-              alias.
-            </p>
+            <h1 className="about-title">{t("About title")}</h1>
+            <p className="">{t("About description")}</p>
             <div className="about-buttons">
-              <button
-                className="btn btn-primary me-2"
-                onClick={handleHablemosClick}
-              >
-                Hablemos!
-              </button>
-              <button className="btn btn-secondary">My CV</button>
+              <LetsTalkButton />
+              <ResumeButton />
             </div>
           </div>
         </div>
