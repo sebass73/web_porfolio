@@ -6,6 +6,8 @@ import linkedin from "../assets/icons/linkedin.svg";
 import github from "../assets/icons/github.svg";
 import instagram from "../assets/icons/instagram.svg";
 import { useTranslation } from "react-i18next";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 const Contact = () => {
   const handleEmailClick = () => {
@@ -22,6 +24,34 @@ const Contact = () => {
   };
 
   const { t } = useTranslation();
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    /*   
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY 
+    */
+    e.preventDefault();
+    console.log(form.current);
+/*     emailjs
+      .sendForm(
+        "service_5erovf9",
+        "template_l1x1jaw",
+        form.current,
+        "Yi2opB9EadslOPdSd"
+      )
+      .then(
+        (result) => {
+          alert("message sent successfully...");
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      ); */
+  };
 
   return (
     <div className="contact-container">
@@ -73,19 +103,18 @@ const Contact = () => {
           </div>
         </button>
       </div>
-      <div className="contact-form">
+      <form className="contact-form" ref={form} onSubmit={sendEmail}>
         <label htmlFor="exampleFormControlInput1" className="form-label">
-          Nombre
           {t("Contact form name")}
         </label>
         <input
-          type=""
+          type="text"
           className="form-control"
           id="exampleFormControlInput1"
           placeholder="Ex: Jonh Snow"
+          name="from_name"
         />
         <label htmlFor="exampleFormControlInput1" className="form-label mt-2">
-          Correo electronico
           {t("Contact form email")}
         </label>
         <input
@@ -93,16 +122,18 @@ const Contact = () => {
           className="form-control"
           id="exampleFormControlInput1"
           placeholder="snow@example.com"
+          name="to_name"
         />
         <label
           htmlFor="exampleFormControlTextarea1"
           className="form-label mt-2"
         >
-          ¿Qué mas es posible?
           {t("Contact form title message")}
         </label>
         <textarea
           className="form-control"
+          type="text"
+          name="message"
           id="exampleFormControlTextarea1"
           rows="3"
           placeholder={t("Contact form title placeholder")}
@@ -110,7 +141,24 @@ const Contact = () => {
         <button className="btn btn-secondary btn-send">
           {t("Lets talk button")}
         </button>
-      </div>
+      </form>
+      {/* <div>
+        <h1>Contact Form</h1>
+        <form className="cf" ref={form} onSubmit={sendEmail}>
+          <div className="half left cf">
+            <input type="text" placeholder="Name" name="from_name" />
+            <input type="email" placeholder="Email address" name="to_name" />
+          </div>
+          <div className="half right cf">
+            <textarea
+              name="message"
+              type="text"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <input type="submit" value="Submit" id="input-submit" />
+        </form>
+      </div> */}
     </div>
   );
 };
