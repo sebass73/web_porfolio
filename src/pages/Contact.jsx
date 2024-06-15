@@ -1,6 +1,5 @@
 import "./Contact.css";
 
-import nodejsicon from "../assets/icons/nodejsicon.svg";
 import gmail from "../assets/icons/gmail.svg";
 import linkedin from "../assets/icons/linkedin.svg";
 import github from "../assets/icons/github.svg";
@@ -26,31 +25,26 @@ const Contact = () => {
   const { t } = useTranslation();
 
   const form = useRef();
+
   const sendEmail = (e) => {
-    /*   
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_PUBLIC_KEY 
-    */
     e.preventDefault();
-    console.log(form.current);
-/*     emailjs
+    emailjs
       .sendForm(
-        "service_5erovf9",
-        "template_l1x1jaw",
+        import.meta.env.VITE_TEMPLATE_ID,
+        import.meta.env.VITE_SERVICE_ID,
         form.current,
-        "Yi2opB9EadslOPdSd"
+        import.meta.env.VITE_PUBLIC_KEY 
       )
       .then(
         (result) => {
-          alert("message sent successfully...");
+          alert("Message sent successfully...");
           console.log(result.text);
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
         }
-      ); */
+      );
   };
 
   return (
@@ -122,7 +116,7 @@ const Contact = () => {
           className="form-control"
           id="exampleFormControlInput1"
           placeholder="snow@example.com"
-          name="to_name"
+          name="from_email"
         />
         <label
           htmlFor="exampleFormControlTextarea1"
@@ -142,23 +136,6 @@ const Contact = () => {
           {t("Lets talk button")}
         </button>
       </form>
-      {/* <div>
-        <h1>Contact Form</h1>
-        <form className="cf" ref={form} onSubmit={sendEmail}>
-          <div className="half left cf">
-            <input type="text" placeholder="Name" name="from_name" />
-            <input type="email" placeholder="Email address" name="to_name" />
-          </div>
-          <div className="half right cf">
-            <textarea
-              name="message"
-              type="text"
-              placeholder="Message"
-            ></textarea>
-          </div>
-          <input type="submit" value="Submit" id="input-submit" />
-        </form>
-      </div> */}
     </div>
   );
 };

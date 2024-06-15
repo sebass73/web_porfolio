@@ -5,12 +5,15 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 
+
 function App() {
+  
   return (
     <>
       <div className="font-link">
         <Navbar></Navbar>
         <section id="#">
+          {console.log(import.meta.env)}
           <Home></Home>
         </section>
         <section id="about">
