@@ -96,4 +96,8 @@
     .profile-title{
         padding-top: 0;
     }
+
+    .profile-sub-container {
+      /* flex-direction: row; */
+    }
 }

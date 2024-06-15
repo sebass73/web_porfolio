@@ -9,7 +9,7 @@ const LetsTalkButton = () => {
   const { t } = useTranslation();
 
   return (
-    <button className="btn btn-primary me-2" onClick={handleHablemosClick}>
+    <button className="btn btn-primary me-2 hover-effect" onClick={handleHablemosClick}>
       {t('Lets talk button')}
     </button>
   );

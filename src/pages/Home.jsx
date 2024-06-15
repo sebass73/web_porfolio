@@ -50,7 +50,7 @@ const Home = () => {
           <div className="welcome-text-desktop">
             <div className="home-text">
               <h3 className="welcome-desktop">{t('Home welcome')}</h3>
-              <h1 className="title font-link-title">{t('Home title desktop')}<span className="home-desktop-name">{t('Home title desktop name')}</span>!</h1>
+              <h1 className="title font-link-title hover-effect">{t('Home title desktop')}<span className="home-desktop-name">{t('Home title desktop name')}</span>!</h1>
               <h2 className="role">{t('Home role')}</h2>
               <h3 className="home-role-description-desktop">{t('Home role description desktop')}</h3>
             </div>

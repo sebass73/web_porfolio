@@ -23,3 +23,7 @@ body {
   font-weight: 200;
   font-style: normal;
 }
+
+.hover-effect:hover {
+  transform: scale(1.05);
+}

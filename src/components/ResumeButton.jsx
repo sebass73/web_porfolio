@@ -14,7 +14,7 @@ const ResumeButton = () => {
   const { t } = useTranslation();
 
   return (
-    <button className="btn btn-secondary" onClick={handleResumeClick}>
+    <button className="btn btn-secondary hover-effect" onClick={handleResumeClick}>
       {t('Resume button')}
     </button>
   );

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import useWidthScreen from "../hooks/useWidthScreen";
 import argentinaFlag from "../../public/argentinaFlag.png";
+import brackets from "../../public/brackets.svg";
 import UKFlag from "../../public/ukFlag.png";
 
 const Navbar = () => {
@@ -49,8 +50,9 @@ const Navbar = () => {
             } navbar-light`}
           >
             <div
-              className={`container-fluid ${isScrolled ? "d-flex" : "d-none"}`}
+              className="container-fluid"
             >
+              <img src={brackets} style={{width: "1.75rem", height: "1.75rem"}} alt="" />
               <a className="navbar-brand" href="/">
                 Sebas.Dev
               </a>
@@ -76,7 +78,7 @@ const Navbar = () => {
                   {pageList.map((page, i) => (
                     <li key={page + i} className="nav-item">
                       <a
-                        className="nav-link"
+                        className="nav-link "
                         aria-current="page"
                         to={page.route}
                         href={page.href}
@@ -90,7 +92,7 @@ const Navbar = () => {
                 <div className="switch-container">
                   <div
                     className="form-check-label me-2"
-                    style={{ color: "wheat" }}
+                    style={{ color: "white", fontWeight: "600" }}
                     htmlFor=""
                   >
                     🇬🇧 English
@@ -108,7 +110,7 @@ const Navbar = () => {
                   </div>
                   <div
                     className="form-check-label"
-                    style={{ color: "wheat" }}
+                    style={{ color: "white", fontWeight: "600" }}
                     htmlFor=""
                   >
                     🇦🇷 Español
@@ -126,10 +128,11 @@ const Navbar = () => {
             } navbar-light`}
           >
             <div
-              className={"container-fluid d-flex"}
+              className="container-fluid d-flex ms-2"
             >
+              <img src={brackets} style={{width: "28px", height: "28px"}} className="hover-effect" alt="" />
               <a
-                className={`navbar-brand ${isScrolled ? "d-flex" : "d-none"}`}
+                className="navbar-brand hover-effect"
                 href="/"
               >
                 Sebas.Dev
@@ -156,7 +159,7 @@ const Navbar = () => {
                   {pageList.map((page, i) => (
                     <li
                       key={page + i}
-                      className={`nav-item ${isScrolled ? "d-flex" : "d-none"}`}
+                      className="nav-item hover-effect"
                     >
                       <a
                         className="nav-link"
@@ -176,11 +179,11 @@ const Navbar = () => {
                     style={{ color: "wheat" }}
                     htmlFor=""
                   >
-                    <img src={UKFlag} style={{width: "28px", height: "28px"}} alt="" />
+                    <img src={UKFlag} style={{width: "28px", height: "28px"}} className="hover-effect" alt="" />
                   </div>
                   <div className="form-check form-switch">
                     <input
-                      className="form-check-input me-2"
+                      className="form-check-input me-2 hover-effect"
                       type="checkbox"
                       id="flexSwitchCheckDefault"
                       onChange={() =>
@@ -194,7 +197,7 @@ const Navbar = () => {
                     style={{ color: "wheat" }}
                     htmlFor=""
                   >
-                    <img src={argentinaFlag} style={{width: "28px", height: "28px"}} alt="" />
+                    <img src={argentinaFlag} style={{width: "28px", height: "28px"}} className="hover-effect" alt="" />
                   </div>
                 </div>
               </div>
