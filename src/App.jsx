@@ -8,11 +8,13 @@ import Profile from "./pages/Profile";
 import useImageLoader from "./hooks/useImageLoader";
 import background1 from "./assets/background1.svg";
 import meDesktop from "./assets/me_desktop.svg";
+import me from "../assets/me1.svg";
 
 function App() {
   const images = [
     background1,
-    meDesktop
+    meDesktop,
+    me
   ];
 
   const allImagesLoaded = useImageLoader(images);
