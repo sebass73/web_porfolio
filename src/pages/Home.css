@@ -62,7 +62,7 @@
 .welcome {
   background-color: wheat;
   position: absolute;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   width: auto;
   animation: swing 10s infinite;
   font-size: clamp(6vw, 4.5vw, 100px);
@@ -84,8 +84,8 @@
 .title {
   margin-bottom: 30px;
   background-color: wheat;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra negra */
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   font-family: "Nunito", sans-serif;
   cursor: grab;
 }
@@ -99,20 +99,20 @@
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: wheat;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra negra */
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .btn-primary {
   background-color: orange !important;
   border-color: orange !important;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .btn-secondary {
   background-color: purple !important;
   border-color: purple !important;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .home-buttons {
@@ -132,6 +132,15 @@
   height: auto;
 }
 
+.switch-container-home{
+  width: 100%;
+  flex-direction: column;
+  align-items: end;
+  position: absolute;
+  top: 1rem;
+  height: fit-content;
+}
+
 @media (min-width: 998px) {
   .home-container {
     height: 100vh;
@@ -147,11 +156,10 @@
     flex-direction: column;
     justify-content: space-around;
     width: 55%;
-    /* height: 60%; */
     align-items: center;
     padding: 1rem;
     background-color: wheat;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     max-width: 41rem;
     margin: 0 auto;
   }
@@ -159,7 +167,6 @@
   .home-text {
     display: flex;
     flex-direction: column;
-    /* width: 60rem; */
   }
 
   .rounded-img {
@@ -183,12 +190,36 @@
   .home-role-description-desktop{
     font-size: 1.1rem;
     text-align: left;
+    font-weight: normal;
+  }
+
+  .home-role-description-desktop-company a{
+    font-weight: bold;
+    text-decoration: none !important;
+    display: inline-block;
+    position: relative;
+    color: black;
+    margin-right: 0.5rem;
+    padding-right: 0.4rem;
+  }
+
+  .home-role-description-desktop-company a:hover{
+    transform: scale(1.05);
+    color: rgb(13, 110, 253);
+  }
+
+  .home-role-description-desktop-company-icon{
+    margin-left: 5px;
+    font-size: 0.8em;
+    position: absolute;
+    top: 0;
+    right: -5px;
   }
 
   .welcome-desktop{
     font-size: x-large;
     align-self: start;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra negra */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   }
 
   .home-buttons {

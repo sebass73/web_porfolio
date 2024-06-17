@@ -5,14 +5,14 @@ export const pageList = [
         href: "#"
     },
     {
-        name: "About",
-        route: "/about",
-        href: "#about"
-    },
-    {
         name: "Profile",
         route: "/profile",
         href: "#profile"
+    },
+    {
+        name: "About",
+        route: "/about",
+        href: "#about"
     },
     {
         name: "Contact",

@@ -170,11 +170,13 @@ const About = () => {
             </button>
           </div>
           <div className="about-description">
-            <h1 className="about-title">{t("About title")}</h1>
-            <p className="">{t("About description")}</p>
-            <div className="about-buttons">
-              <LetsTalkButton />
-              <ResumeButton />
+            <div className="about-description-subcontainer">
+              <h1 className="about-title">{t("About title")}</h1>
+              <p className="">{t("About description")}</p>
+              <div className="about-buttons">
+                <LetsTalkButton />
+                <ResumeButton />
+              </div>
             </div>
           </div>
         </div>

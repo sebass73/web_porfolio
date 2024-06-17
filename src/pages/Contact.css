@@ -5,6 +5,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("../assets/background1.svg");
+  background-size: cover;
+  background-position: center;
 }
 
 .social-media-container {
@@ -56,7 +59,6 @@
 
 .social-media-button-subtitle {
   font-size: x-small;
-  /* overflow: hidden; */
 }
 
 .contact-icon {
@@ -74,6 +76,10 @@
   align-items: flex-start;
   width: 90%;
   max-width: 50rem;
+  background-color: orange;
+  border-radius: 2%;
+  padding: 1rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .btn-send {
@@ -84,28 +90,80 @@
 
 .contact-title {
   margin: 1rem;
-  color: black;
+  color: white;
   font-weight: 600;
 }
 
+.contact-form-title {
+  align-self: center;
+  color: white;
+}
+
 @media (min-width: 998px) {
-    .contact-container {
-        padding-top: 10vh;
-    }
+  .contact-container {
+    padding-top: 12.5vh;
+  }
 
-    .contact-form{
-        margin-top: 0;
-    }
-    
-    .social-media-button:hover {
-        transform: scale(1.05);
-    }
+  .contact-title {
+  }
 
-    .social-media-button-gray:hover {
-        transform: scale(1.05);
-    }
+  .contact-form {
+    height: 90%;
+  }
 
-    .btn-send:hover{
-        transform: scale(1.05);
-    }
+  .social-media-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #BC3436 !important;
+    border-color: #BC3436 !important;
+  }
+
+  .contact-icon {
+    width: 15%;
+    height: auto;
+  }
+
+  .social-media-button-gray {
+    width: 50%;
+  }
+
+  .social-media-button:hover {
+    transform: scale(1.05);
+  }
+
+  .social-media-button-gray:hover {
+    transform: scale(1.05);
+  }
+
+  .btn-send:hover {
+    transform: scale(1.05);
+  }
+
+  .contact-sub-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+  }
+
+  .social-media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+    border-radius: 2%;
+    padding: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    height: 90%;
+  }
+
+  .social-media-container-title {
+    color: white;
+  }
+
+  .social-media-button-container {
+    width: 40%;
+  }
 }

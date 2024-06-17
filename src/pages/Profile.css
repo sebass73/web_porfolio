@@ -8,9 +8,7 @@
   height: 90%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   align-items: center;
-  /* background-color: blue; */
   background-image: linear-gradient(to bottom, blue, wheat);
   margin-top: 2vh;
 }
@@ -18,7 +16,6 @@
 .profileCarousel {
   width: 90%;
   max-width: 18rem;
-  /* height: 50%; */
 }
 
 .carousel-inner-profile {
@@ -36,7 +33,7 @@
   height: 48px !important;
   border-radius: 50%;
   align-self: center;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 0 1.2px 1.92251px rgba(0, 0, 0, 0.02),
     0 2px 3.68135px rgba(0, 0, 0, 0.04), 0 1px 5px rgba(0, 0, 0, 0.05);
 }
@@ -56,7 +53,7 @@
   height: 48px !important;
   border-radius: 50%;
   align-self: center;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 0 1.2px 1.92251px rgba(0, 0, 0, 0.02),
     0 2px 3.68135px rgba(0, 0, 0, 0.04), 0 1px 5px rgba(0, 0, 0, 0.05);
 }
@@ -81,6 +78,7 @@
   justify-content: flex-start;
   color: black;
   font-weight: 600;
+  padding-bottom: 0.5rem;
 }
 
 .profile-paragraph {
@@ -93,11 +91,74 @@
 }
 
 @media (min-width: 998px) {
-    .profile-title{
-        padding-top: 0;
-    }
+  .profile-title {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 60%;
+    color: wheat;
+  }
 
-    .profile-sub-container {
-      /* flex-direction: row; */
+  .profile-paragraph{
+    color: wheat;
+    width: 100%;
+  }
+
+  .profile-sub-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .profileCarousel {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .carousel-inner-profile:hover {
+    transform: scale(1.05);
+    opacity: 0.7;
+    
+    .carousel-control-zoom{
+      filter: brightness(0) invert(1);
     }
+  }
+
+  .carousel-inner-profile{
+    transition: 0.3s;
+  }
+
+  .profile-skills-card{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+  }
+
+  .carousel-control-zoom{
+    bottom: auto !important;
+  }
+
+  .carousel-control-zoom-icon{
+    width: 90%;
+    height: 90%;
+  }
+  
+  .profile-skills-info{
+    display: flex;
+    width: 40%;
+    height: 90%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .profile-title-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
 }
