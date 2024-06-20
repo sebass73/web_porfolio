@@ -115,7 +115,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 95%;
+    height: 60%;
     background-color: #BC3436 !important;
     border-color: #BC3436 !important;
   }
@@ -126,7 +127,10 @@
   }
 
   .social-media-button-gray {
-    width: 50%;
+    width: 95%;
+    height: 60%;
+    background-color: gray !important;
+    border-color: gray !important;
   }
 
   .social-media-button:hover {
@@ -144,26 +148,44 @@
   .contact-sub-container {
     display: flex;
     flex-direction: row;
-    width: 90%;
-    height: 100%;
+    width: 80%;
+    height: fit-content;
+    background-color: rgb(245, 186, 76);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 2%;
+    margin-bottom: 2rem;
+    max-height: 82%;
   }
 
   .social-media-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
-    background-color: orange;
-    border-radius: 2%;
     padding: 1rem;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    height: 90%;
+    height: 55%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+    margin-top: 0;
+  }
+
+  .contact-form {
+    background-color: transparent;
+    box-shadow: none;
+    width: 50%;
   }
 
   .social-media-container-title {
     color: white;
+    padding-top: 2rem;
   }
 
   .social-media-button-container {
     width: 40%;
+  }
+
+  .social-media-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
   }
 }

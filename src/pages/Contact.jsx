@@ -153,56 +153,58 @@ const Contact = () => {
         <>
           <h1 className="contact-title">{t("Contact title")}</h1>
           <div className="contact-sub-container">
-            <div className="social-media-container">
+            <div className="social-media-parent">
               <h2 className="social-media-container-title">Social Media</h2>
-              <button
-                className="btn social-media-button"
-                onClick={handleEmailClick}
-              >
-                <img src={gmail} alt="Gmail Icon" className="contact-icon" />
-                <div className="social-media-button-container">
-                  <span className="social-media-button-title">Email</span>
-                  <div className="social-media-button-subtitle">
-                    {t("Email Social media button subtitle")}
+              <div className="social-media-container">
+                <button
+                  className="btn social-media-button"
+                  onClick={handleEmailClick}
+                >
+                  <img src={gmail} alt="Gmail Icon" className="contact-icon" />
+                  <div className="social-media-button-container">
+                    <span className="social-media-button-title">Email</span>
+                    <div className="social-media-button-subtitle">
+                      {t("Email Social media button subtitle")}
+                    </div>
                   </div>
-                </div>
-              </button>
-              <button
-                className="btn social-media-button"
-                onClick={handleLinkedInClick}
-              >
-                <img src={linkedin} alt="" className="contact-icon" />
-                <div className="social-media-button-container">
-                  <span className="social-media-button-title">LinkedIn</span>
-                  <span className="social-media-button-subtitle">
-                    {t("Linkedin Social media button subtitle")}
-                  </span>
-                </div>
-              </button>
-              <button className="btn social-media-button social-media-button-gray">
-                <img src={github} alt="" className="contact-icon" />
-                <div className="social-media-button-container">
-                  <span className="social-media-button-title">Github</span>
-                  {/*             <span className="social-media-button-subtitle">
-              Check out my repos
-            </span> */}
-                  <span className="social-media-button-subtitle">
-                    {t("Github Social media button subtitle")}
-                  </span>
-                </div>
-              </button>
-              <button
-                className="btn social-media-button"
-                onClick={handleInstagramClick}
-              >
-                <img src={instagram} alt="" className="contact-icon" />
-                <div className="social-media-button-container">
-                  <span className="social-media-button-title">Instagram</span>
-                  <span className="social-media-button-subtitle">
-                    {t("Instagram Social media button subtitle")}
-                  </span>
-                </div>
-              </button>
+                </button>
+                <button
+                  className="btn social-media-button"
+                  onClick={handleLinkedInClick}
+                >
+                  <img src={linkedin} alt="" className="contact-icon" />
+                  <div className="social-media-button-container">
+                    <span className="social-media-button-title">LinkedIn</span>
+                    <span className="social-media-button-subtitle">
+                      {t("Linkedin Social media button subtitle")}
+                    </span>
+                  </div>
+                </button>
+                <button className="btn social-media-button social-media-button-gray">
+                  <img src={github} alt="" className="contact-icon" />
+                  <div className="social-media-button-container">
+                    <span className="social-media-button-title">Github</span>
+                    {/*             <span className="social-media-button-subtitle">
+                  Check out my repos
+                </span> */}
+                    <span className="social-media-button-subtitle">
+                      {t("Github Social media button subtitle")}
+                    </span>
+                  </div>
+                </button>
+                <button
+                  className="btn social-media-button"
+                  onClick={handleInstagramClick}
+                >
+                  <img src={instagram} alt="" className="contact-icon" />
+                  <div className="social-media-button-container">
+                    <span className="social-media-button-title">Instagram</span>
+                    <span className="social-media-button-subtitle">
+                      {t("Instagram Social media button subtitle")}
+                    </span>
+                  </div>
+                </button>
+              </div>
             </div>
             <form className="contact-form" ref={form} onSubmit={sendEmail}>
               <h2 className="contact-form-title">Send me a message</h2>

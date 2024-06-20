@@ -3,9 +3,9 @@ import { pageList } from "../constants/pageList";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import useWidthScreen from "../hooks/useWidthScreen";
-import argentinaFlag from "../../public/argentinaFlag.png";
-import brackets from "../../public/brackets.svg";
-import UKFlag from "../../public/ukFlag.png";
+import argentinaFlag from "/argentinaFlag.png";
+import brackets from "/brackets.svg";
+import UKFlag from "/ukFlag.png";
 
 const Navbar = () => {
   const [isNavbarCollapsed, setIsNavbarCollapsed] = useState(true);
